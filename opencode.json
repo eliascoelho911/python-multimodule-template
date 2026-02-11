@@ -6,6 +6,7 @@
             "enabled": true
         }
     },
+    "model": "openrouter/moonshotai/kimi-k2.5",
     "permission": {
         "bash": {
             "./specify *": "allow",
@@ -101,5 +102,16 @@
     },
     "keybinds": {
         "input_newline": "shift+return,ctrl+return,alt+return,ctrl+j"
+    },
+    "agent": {
+        "plan": {
+            "model": "openrouter/anthropic/claude-opus-4.6"
+        },
+        "build": {
+            "model": "openrouter/moonshotai/kimi-k2.5"
+        },
+        "explore": {
+            "model": "openrouter/moonshotai/kimi-k2.5"
+        }
     }
 }
